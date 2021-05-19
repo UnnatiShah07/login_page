@@ -1,16 +1,19 @@
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: #F0F0F0;
 }
 
 .header{
-    margin: auto;
-    width: 15rem;
-    margin-bottom: 2rem;
+    color: #36648B;
+    font-family: 'Roboto', sans-serif;
 }
 .header-img{
-    height: 5rem;
-    width: 15rem;
-    border-radius: 1rem;
+    transform: rotate(270deg);
+}
+.header-font{
+    font-weight: bold;
+    font-size: x-large;
+    padding-left: 3px;
 }
 
 .container{
@@ -18,16 +21,15 @@ body{
     width: 15rem;
     display: grid;
     row-gap: 1rem;
-    background-color:white;
     padding: 1rem 1rem;
     border-radius: 1rem;
+    background-color: #F0F0F0;
 }
 .container .inner-container{
     display: grid;
     row-gap: 0.2rem;
     text-align: left;
 }
-
 
 .center {
   position: absolute;
@@ -39,11 +41,12 @@ body{
 
 .shadow{
     width: 250px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: -1px -1px 3px 1px white,1px 1px 3px 1px rgb(201, 193, 193);
+    
   }
 
 .inner-shadow{
-    box-shadow:inset 0 0 5px #adaaaa;
+    box-shadow:inset -1px -1px 2px rgb(255, 255, 255),inset 1px 1px 2px rgb(201, 193, 193);
 }
 
 .button{
@@ -55,10 +58,15 @@ body{
     color: white;
 }
 
+
+input:focus{
+    outline: none;
+}
 .input-design{
     border: none;
     padding: 0.5rem;
     border-radius: 0.5rem;
+    background-color: #F0F0F0;
 }
 ::placeholder {
     color :slategray;
